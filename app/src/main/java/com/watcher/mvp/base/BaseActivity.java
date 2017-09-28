@@ -41,7 +41,6 @@ public abstract class BaseActivity<T extends BasePresenter> extends AppCompatAct
         fl_main = (FrameLayout) findViewById(R.id.fl_main);
         fl_main.addView(view);
         unbinder = ButterKnife.bind(this);
-        context = this;
         initInject();
         if (presenter != null)
             presenter.attachView(this);

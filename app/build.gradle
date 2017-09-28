@@ -12,11 +12,9 @@ android {
         targetSdkVersion rootProject.ext.android.targetSdkVersion
         versionCode rootProject.ext.android.versionCode
         versionName rootProject.ext.android.versionName
-
         multiDexEnabled true
         vectorDrawables.useSupportLibrary true
     }
-
 
     buildTypes {
         release {
@@ -36,6 +34,7 @@ dependencies {
     //base
     compile rootProject.ext.dependencies["appcompat-v7"]
     compile rootProject.ext.dependencies["design"]
+    compile rootProject.ext.dependencies["support"]
     compile rootProject.ext.dependencies["recyclerview-v7"]
     compile rootProject.ext.dependencies["cardview-v7"]
     //rx
@@ -58,12 +57,10 @@ dependencies {
     provided rootProject.ext.dependencies["annotation"]
     //other
     compile rootProject.ext.dependencies["multidex"]
+    compile rootProject.ext.dependencies["sdp"]
+    compile rootProject.ext.dependencies["ssp"]
+    compile rootProject.ext.dependencies["utilcode"]
 
-    compile 'com.intuit.sdp:sdp-android:1.0.4'
-    compile 'com.intuit.ssp:ssp-android:1.0.4'
-    compile 'com.blankj:utilcode:1.8.2'
-    compile 'com.orhanobut:hawk:2.0.1'
-    compile 'com.android.support:support-v4:25.3.1'
 }
 apply plugin: 'me.tatarka.retrolambda'
 apply plugin: 'com.google.gms.google-services'
