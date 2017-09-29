@@ -48,6 +48,7 @@ dependencies {
     compile rootProject.ext.dependencies["okhttp"]
     compile rootProject.ext.dependencies["okhttp-logging-interceptor"]
     compile rootProject.ext.dependencies["glide"]
+    compile rootProject.ext.dependencies["glide-compiler"]
     compile rootProject.ext.dependencies["glide-okhttp3-integration"]
     //di
     compile rootProject.ext.dependencies["dagger"]

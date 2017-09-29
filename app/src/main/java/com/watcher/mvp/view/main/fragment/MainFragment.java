@@ -1,6 +1,8 @@
 package com.watcher.mvp.view.main.fragment;
 
 
+import android.support.v4.app.Fragment;
+
 import com.watcher.mvp.R;
 import com.watcher.mvp.base.BaseFragment;
 import com.watcher.mvp.presenter.MockupPresenter;
@@ -11,6 +13,10 @@ public class MainFragment extends BaseFragment<MockupPresenter> implements Mocku
 
     public MainFragment() {
 
+    }
+
+    public static Fragment newInstance(){
+        return new MainFragment();
     }
 
     @Override
